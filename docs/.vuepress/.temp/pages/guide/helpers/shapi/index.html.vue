@@ -40,8 +40,8 @@
 </ul>
 <h3 id="dopost" tabindex="-1"><a class="header-anchor" href="#dopost"><span><code v-pre>doPost</code></span></a></h3>
 <p>Makes a POST request to the backend api</p>
-<div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code>shApis<span class="token punctuation">.</span><span class="token function">doPost</span><span class="token punctuation">(</span><span class="token string">'users/add'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span>
+<div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code>shApis<span class="token punctuation">.</span><span class="token function">doPost</span><span class="token punctuation">(</span><span class="token string">'users/add'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> 
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> 
   <span class="token literal-property property">email</span><span class="token operator">:</span> <span class="token string">'john@example.com'</span><span class="token punctuation">,</span>
   <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">12</span>
 <span class="token punctuation">}</span>

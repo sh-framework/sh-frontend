@@ -1492,10 +1492,7 @@ function warn$1(msg, ...args) {
       instance,
       11,
       [
-        msg + args.map((a) => {
-          var _a, _b;
-          return (_b = (_a = a.toString) == null ? void 0 : _a.call(a)) != null ? _b : JSON.stringify(a);
-        }).join(""),
+        msg + args.join(""),
         instance && instance.proxy,
         trace.map(
           ({ vnode }) => `at <${formatComponentName(instance, vnode.type)}>`
@@ -2664,7 +2661,7 @@ var SuspenseImpl = {
         rendererInternals
       );
     } else {
-      if (parentSuspense && parentSuspense.deps > 0 && !n1.suspense.isInFallback) {
+      if (parentSuspense && parentSuspense.deps > 0) {
         n2.suspense = n1.suspense;
         n2.suspense.vnode = n2;
         n2.el = n1.el;
@@ -9590,7 +9587,7 @@ function isMemoSame(cached, memo) {
   }
   return true;
 }
-var version = "3.4.21";
+var version = "3.4.20";
 var warn2 = true ? warn$1 : NOOP;
 var ErrorTypeStrings = ErrorTypeStrings$1;
 var devtools = true ? devtools$1 : void 0;
@@ -10201,15 +10198,15 @@ function patchDOMProp(el, key, value, prevChildren, parentComponent, parentSuspe
   const tag = el.tagName;
   if (key === "value" && tag !== "PROGRESS" && // custom elements may use _value internally
   !tag.includes("-")) {
+    el._value = value;
     const oldValue = tag === "OPTION" ? el.getAttribute("value") || "" : el.value;
     const newValue = value == null ? "" : value;
-    if (oldValue !== newValue || !("_value" in el)) {
+    if (oldValue !== newValue) {
       el.value = newValue;
     }
     if (value == null) {
       el.removeAttribute(key);
     }
-    el._value = value;
     return;
   }
   let needRemove = false;
@@ -11364,21 +11361,21 @@ export {
 
 @vue/shared/dist/shared.esm-bundler.js:
   (**
-  * @vue/shared v3.4.21
+  * @vue/shared v3.4.20
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **)
 
 @vue/reactivity/dist/reactivity.esm-bundler.js:
   (**
-  * @vue/reactivity v3.4.21
+  * @vue/reactivity v3.4.20
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **)
 
 @vue/runtime-core/dist/runtime-core.esm-bundler.js:
   (**
-  * @vue/runtime-core v3.4.21
+  * @vue/runtime-core v3.4.20
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **)
@@ -11386,7 +11383,7 @@ export {
 
 @vue/runtime-dom/dist/runtime-dom.esm-bundler.js:
   (**
-  * @vue/runtime-dom v3.4.21
+  * @vue/runtime-dom v3.4.20
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **)
@@ -11394,9 +11391,9 @@ export {
 
 vue/dist/vue.runtime.esm-bundler.js:
   (**
-  * vue v3.4.21
+  * vue v3.4.20
   * (c) 2018-present Yuxi (Evan) You and Vue contributors
   * @license MIT
   **)
 */
-//# sourceMappingURL=chunk-CKQ4TNQ3.js.map
+//# sourceMappingURL=chunk-G7P6XGB7.js.map

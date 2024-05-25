@@ -6,7 +6,7 @@ export default defineUserConfig({
     bundler: viteBundler(),
     lang: 'en-US',
     title: 'Sh Frontend!',
-    description: 'This is my first VuePress site',
+    description: 'A frontend library for Sharasolutions projects',
     sidebar: 'auto',
     themeConfig: {
         sidebar: 'auto'
@@ -25,7 +25,7 @@ export default defineUserConfig({
             },
             {
                 text: 'Github',
-                link: 'https://github.com/sharasolns/sh-frontend'
+                link: 'https://github.com/sh-framework/sh-frontend'
             }
         ],
         sidebar: {

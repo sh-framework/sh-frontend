@@ -1,6 +1,9 @@
 {
-  "name": "@iankibetsh/shframework",
-  "version": "4.6.6",
+  "name": "@shsolution/sh-frontend",
+  "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Vue library for handling laravel backend",
   "main": "dist/library.js",
   "module": "dist/library.mjs",

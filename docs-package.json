@@ -1,5 +1,5 @@
 {
-  "name": "@iankibetsh/shframework",
+  "name": "@shsolution/sh-framework",
   "version": "4.5.3",
   "description": "Vue library for handling laravel backend",
   "main": "dist/library.js",
