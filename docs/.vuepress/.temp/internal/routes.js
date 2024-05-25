@@ -24,7 +24,6 @@ export const routes = Object.fromEntries([
   ["/guide/helpers/shapi/", { loader: () => import(/* webpackChunkName: "index.html" */"/private/var/www/html/framework/sh-frontend/docs/.vuepress/.temp/pages/guide/helpers/shapi/index.html.js"), meta: {"title":"shApi"} }],
   ["/guide/helpers/shuser/", { loader: () => import(/* webpackChunkName: "index.html" */"/private/var/www/html/framework/sh-frontend/docs/.vuepress/.temp/pages/guide/helpers/shuser/index.html.js"), meta: {"title":"shUser"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/private/var/www/html/framework/sh-frontend/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/Reads.html", { loader: () => import(/* webpackChunkName: "Reads.html" */"/private/var/www/html/framework/sh-frontend/docs/.vuepress/.temp/pages/Reads.html.js"), meta: {"title":""} }],
 ]);
 
 if (import.meta.webpackHot) {

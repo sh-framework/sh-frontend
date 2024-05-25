@@ -1,21 +1,20 @@
 
-# Sh Frontend Documentation
-home: true
-heroText: Sh Frontend Documentation
-tagLine: Here we go
-actions:
-- text: Get Started
-  link: /guide/introduction
-  type: primary
-- text: Github
-  link: https://github.com/sharasolns/sh-frontend
-  type: secondary
-features:
-- title: Simplicity First
-  details: Minimal setup with all common web page components.
-- title: Vue-Powered
-  details: Powered by latest versions of vue and vite
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2021-Present Ian Kibet | Silah Kosgei
+## Shfrontend: Vue 3 Framework
+## Getting Started
 
+To get started, make sure you have a Vue 3 application set up.
+
+
+```sh
+npm install @shsolution/sh-frontend
+```
+
+or
+
+```sh
+yarn add @shsolution/sh-frontend
+``` 
+
+## Read more here
+
+[Frontend Documentation](https://sh-frontend-eta.vercel.app/)
